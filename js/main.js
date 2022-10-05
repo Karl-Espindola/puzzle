@@ -1,16 +1,15 @@
+//Declaración de variables
+
 let array_img=[];
 let fichas_ordenadas=[0,1,2,3,4,5,6,7,8];
 let fichas=[0,1,2,3,4,5,6,7,8];
 let num_click=0;
 let casilla=0;
 let contador=0;
-let src_img_a="";
-let src_img_b="";
-let img_a;
 let posicion_1;
 
-let num_img;
 
+//Declaración de funciones
 
 function mover(){
     for(let i=0; i<9; i++){
@@ -47,7 +46,7 @@ function seleccionar(casilla){
 }
 function verificar(){
 
-    for(let i=0; i<array_img.length; i++){
+    for(let i=0; i<9; i++){
         console.log(contador);
         
         if(fichas[i]!=fichas_ordenadas[i]){
@@ -90,13 +89,13 @@ function verificar(){
     }
     contador=0;
 }
+window.onload=function(){
+    desordenar()
+}
         
 let btn_veri=document.getElementById("btnVerificar");
 btn_veri.addEventListener("click",verificar);
 
-
-
-desordenar()
 
 
 
