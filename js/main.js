@@ -92,7 +92,8 @@ function verificar(){
 window.onload=function(){
     desordenar()
 }
-        
+
+
 let btn_veri=document.getElementById("btnVerificar");
 btn_veri.addEventListener("click",verificar);
 
